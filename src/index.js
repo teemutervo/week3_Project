@@ -21,7 +21,7 @@ function initializeCode() {
 
     img.classList.add("wiki-img");
     img.src = "wiki-osoite tähän";
-    divpic.classList.add("img-ontainer");
+    divpic.classList.add("img-container");
     divtext.classList.add("wiki-content");
     p.classList.add("wiki-text");
     div.classList.add("wiki-item");
