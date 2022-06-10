@@ -35,7 +35,7 @@ function initializeCode() {
   divtext.appendChild(p);
   divtext.appendChild(divpic);
   div2.appendChild(div);
-  document.getElementById("doggo1").innerHTML = "Schipperke";
+  document.getElementById("doggo1").innerHTML = "schipperke";
   document.querySelector("p").innerHTML = "Funny looking dawg";
 
   //Doge2
@@ -63,7 +63,7 @@ function initializeCode() {
   divtext1.appendChild(p1);
   divtext1.appendChild(divpic1);
   div2.appendChild(div1);
-  document.getElementById("doggo2").innerHTML = "Entlebucher";
+  document.getElementById("doggo2").innerHTML = "entlebucher";
   document.getElementById("doggo2text").innerHTML =
     "Suspiciuos-looking dog animal";
 
@@ -92,7 +92,7 @@ function initializeCode() {
   divtext2.appendChild(p2);
   divtext2.appendChild(divpic2);
   div2.appendChild(div22);
-  document.getElementById("doggo3").innerHTML = "Komondor";
+  document.getElementById("doggo3").innerHTML = "komondor";
   document.getElementById("doggo3text").innerHTML = "Summer loving boii";
 
   //Doge4
@@ -120,7 +120,7 @@ function initializeCode() {
   divtext3.appendChild(p3);
   divtext3.appendChild(divpic3);
   div2.appendChild(div32);
-  document.getElementById("doggo4").innerHTML = "Sharpei";
+  document.getElementById("doggo4").innerHTML = "sharpei";
   document.getElementById("doggo4text").innerHTML = "Family dog";
 
   //Doge5
@@ -148,6 +148,6 @@ function initializeCode() {
   divtext4.appendChild(p4);
   divtext4.appendChild(divpic4);
   div2.appendChild(div42);
-  document.getElementById("doggo5").innerHTML = "Germanshephard";
+  document.getElementById("doggo5").innerHTML = "germanshephard";
   document.getElementById("doggo5text").innerHTML = "Blood thirsty war dog";
 }
