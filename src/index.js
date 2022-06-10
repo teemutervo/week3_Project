@@ -36,7 +36,8 @@ function initializeCode() {
   divtext.appendChild(divpic);
   div2.appendChild(div);
   document.getElementById("doggo1").innerHTML = "schipperke";
-  document.querySelector("p").innerHTML = "Funny looking dawg";
+  document.querySelector("p").innerHTML =
+    "A Schipperke  is a small breed of dog that originated since the 1600's in Belgium. There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog. In their home country of Belgium they are considered a small shepherd. DNA research has shown that Schipperkes have a close relationship to the Spitz family of dog breeds.";
 
   //Doge2
 
@@ -65,7 +66,7 @@ function initializeCode() {
   div2.appendChild(div1);
   document.getElementById("doggo2").innerHTML = "entlebucher";
   document.getElementById("doggo2text").innerHTML =
-    "Suspiciuos-looking dog animal";
+    "The Entlebucher Sennenhund or Entlebucher Mountain Dog is a medium-sized herding dog, it is the smallest of the four regional breeds that constitute the Sennenhund dog type. The name Sennenhund refers to people called Senn, herders in the Swiss Alps. Entlebuch is a region in the canton of Lucerne in Switzerland. The breed is also known in English as the Entelbuch Mountain Dog, Entelbucher Cattle Dog, and similar combinations.";
 
   //Doge3
 
@@ -86,14 +87,15 @@ function initializeCode() {
   h12.id = "doggo3";
   p2.id = "doggo3text";
   divpic2.appendChild(img2);
-  div2.appendChild(h12);
-  div2.appendChild(divtext2);
+  div22.appendChild(h12);
+  div22.appendChild(divtext2);
 
   divtext2.appendChild(p2);
   divtext2.appendChild(divpic2);
   div2.appendChild(div22);
   document.getElementById("doggo3").innerHTML = "komondor";
-  document.getElementById("doggo3text").innerHTML = "Summer loving boii";
+  document.getElementById("doggo3text").innerHTML =
+    "The Komondor also known as the Hungarian sheepdog, is a large, white-coloured Hungarian breed of livestock guardian dog with a long, corded coat.";
 
   //Doge4
 
@@ -121,7 +123,8 @@ function initializeCode() {
   divtext3.appendChild(divpic3);
   div2.appendChild(div32);
   document.getElementById("doggo4").innerHTML = "sharpei";
-  document.getElementById("doggo4text").innerHTML = "Family dog";
+  document.getElementById("doggo4text").innerHTML =
+    "The Shar Pei (Cantonese: shā pèih or Mandarin: 沙皮 shā pí) is a dog breed from southern China. Traditionally kept as a watchdog and property guardian, the Shar Pei was driven to the brink of extinction in the 20th century. The breed is known in the West for its deep wrinkles, whilst a traditional less wrinkled form is maintained in Hong Kong.";
 
   //Doge5
 
@@ -149,5 +152,6 @@ function initializeCode() {
   divtext4.appendChild(divpic4);
   div2.appendChild(div42);
   document.getElementById("doggo5").innerHTML = "germanshephard";
-  document.getElementById("doggo5text").innerHTML = "Blood thirsty war dog";
+  document.getElementById("doggo5text").innerHTML =
+    "The German Shepherd Dog also known as the Alsatian, is a German breed of working dog of medium to large size. The breed was developed by Max von Stephanitz using various traditional German herding dogs from 1899.";
 }
