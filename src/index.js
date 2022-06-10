@@ -1,3 +1,6 @@
+//Ensimmäisen koirulin koodia on sortattu, mutta neljä muuta saattaa olla hieman epäselviä.
+//Kaikki kuitenkin kopioita toisistaan.
+
 import "./styles.css";
 
 if (document.readyState !== "loading") {
@@ -5,41 +8,46 @@ if (document.readyState !== "loading") {
 } else {
   document.addEventListener("DOMContentLoaded", function () {});
 }
-//Doge1
+
+// Ensimmäinen koira
+
 function initializeCode() {
   const body = document.querySelector("body");
-  const div2 = document.createElement("div");
-  div2.classList.add("container");
-  body.appendChild(div2);
+  const divMain = document.createElement("div"); //divMainin alle tulee kaikki muut elementit
+  divMain.classList.add("container");
+  body.appendChild(divMain); //Koko paketti lisätää bodyn alle
 
-  const div = document.createElement("div");
-  const divtext = document.createElement("div");
-  const divpic = document.createElement("div");
-  const h1 = document.createElement("h1");
-  const p = document.createElement("p");
-  const img = document.createElement("img");
+  const div = document.createElement("div"); //Tämä on Wiki-item           class.wiki-item
+  const divtext = document.createElement("div"); //Tähän kaikki per koira      class.wiki-content
+  const divpic = document.createElement("div"); //Tähän kuvakontainer         class.img-container
+  const h1 = document.createElement("h1"); //Tähän koiran nimi otsikkona class.wiki-header
+  const p = document.createElement("p"); //Tähän koiran esittelyteksti class.wiki-text
+  const img = document.createElement("img"); //Tähän koiran kuva           class.wiki-img
 
   img.classList.add("wiki-img");
   img.src = "https://images.dog.ceo/breeds/schipperke/n02104365_3826.jpg";
-  divpic.classList.add("img-container");
+  divpic.classList.add("img-container"); //Annetaan ylläoleville muuttujille luokat
   divtext.classList.add("wiki-content");
   p.classList.add("wiki-text");
   div.classList.add("wiki-item");
   h1.classList.add("wiki-header");
-  h1.id = "doggo1";
+
+  h1.id = "doggo1"; //Otsikoille ja kappaleille id:t, koska ei voi muuten viitata samassa luokassa oleviin eri elementteihin
   p.id = "doggo1text";
-  divpic.appendChild(img);
+
+  //Luodaan hierarkia eli mitkä elementit menevät minkäkin alle
+  divMain.appendChild(div);
   div.appendChild(h1);
   div.appendChild(divtext);
-
   divtext.appendChild(p);
   divtext.appendChild(divpic);
-  div2.appendChild(div);
-  document.getElementById("doggo1").innerHTML = "schipperke";
-  document.querySelector("p").innerHTML =
+  divpic.appendChild(img);
+
+  document.getElementById("doggo1").innerHTML = "schipperke"; //Nimetään otsikko ja laitetaan teksti kappaleeseen
+  document.getElementById("doggo1text").innerHTML =
     "A Schipperke  is a small breed of dog that originated since the 1600's in Belgium. There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog. In their home country of Belgium they are considered a small shepherd. DNA research has shown that Schipperkes have a close relationship to the Spitz family of dog breeds.";
 
-  //Doge2
+  // Toinen koira alkaa tästä
 
   const div1 = document.createElement("div");
   const divtext1 = document.createElement("div");
@@ -63,12 +71,12 @@ function initializeCode() {
 
   divtext1.appendChild(p1);
   divtext1.appendChild(divpic1);
-  div2.appendChild(div1);
+  divMain.appendChild(div1);
   document.getElementById("doggo2").innerHTML = "entlebucher";
   document.getElementById("doggo2text").innerHTML =
     "The Entlebucher Sennenhund or Entlebucher Mountain Dog is a medium-sized herding dog, it is the smallest of the four regional breeds that constitute the Sennenhund dog type. The name Sennenhund refers to people called Senn, herders in the Swiss Alps. Entlebuch is a region in the canton of Lucerne in Switzerland. The breed is also known in English as the Entelbuch Mountain Dog, Entelbucher Cattle Dog, and similar combinations.";
 
-  //Doge3
+  // Kolmas koira
 
   const div22 = document.createElement("div");
   const divtext2 = document.createElement("div");
@@ -92,12 +100,12 @@ function initializeCode() {
 
   divtext2.appendChild(p2);
   divtext2.appendChild(divpic2);
-  div2.appendChild(div22);
+  divMain.appendChild(div22);
   document.getElementById("doggo3").innerHTML = "komondor";
   document.getElementById("doggo3text").innerHTML =
     "The Komondor also known as the Hungarian sheepdog, is a large, white-coloured Hungarian breed of livestock guardian dog with a long, corded coat.";
 
-  //Doge4
+  //Neljäs koira
 
   const div32 = document.createElement("div");
   const divtext3 = document.createElement("div");
@@ -121,12 +129,12 @@ function initializeCode() {
 
   divtext3.appendChild(p3);
   divtext3.appendChild(divpic3);
-  div2.appendChild(div32);
+  divMain.appendChild(div32);
   document.getElementById("doggo4").innerHTML = "sharpei";
   document.getElementById("doggo4text").innerHTML =
     "The Shar Pei (Cantonese: shā pèih or Mandarin: 沙皮 shā pí) is a dog breed from southern China. Traditionally kept as a watchdog and property guardian, the Shar Pei was driven to the brink of extinction in the 20th century. The breed is known in the West for its deep wrinkles, whilst a traditional less wrinkled form is maintained in Hong Kong.";
 
-  //Doge5
+  // Viides koira
 
   const div42 = document.createElement("div");
   const divtext4 = document.createElement("div");
@@ -150,7 +158,7 @@ function initializeCode() {
 
   divtext4.appendChild(p4);
   divtext4.appendChild(divpic4);
-  div2.appendChild(div42);
+  divMain.appendChild(div42);
   document.getElementById("doggo5").innerHTML = "germanshephard";
   document.getElementById("doggo5text").innerHTML =
     "The German Shepherd Dog also known as the Alsatian, is a German breed of working dog of medium to large size. The breed was developed by Max von Stephanitz using various traditional German herding dogs from 1899.";
