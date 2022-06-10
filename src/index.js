@@ -19,9 +19,9 @@ function initializeCode() {
     const p = document.createElement("p");
     const img = document.createElement("img");
 
-    img.classList.add("wiki.img");
+    img.classList.add("wiki-img");
     img.src = "wiki-osoite tähän";
-    divpic.classList.add("imagecontainer");
+    divpic.classList.add("img-ontainer");
     divtext.classList.add("wiki-content");
     p.classList.add("wiki-text");
     div.classList.add("wiki-item");
