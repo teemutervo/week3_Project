@@ -20,7 +20,7 @@ function initializeCode() {
   const img = document.createElement("img");
 
   img.classList.add("wiki-img");
-  img.src = "https://images.dog.ceo/breeds/hound-basset/n02088238_9162.jpg";
+  img.src = "https://images.dog.ceo/breeds/schipperke/n02104365_3826.jpg";
   divpic.classList.add("img-container");
   divtext.classList.add("wiki-content");
   p.classList.add("wiki-text");
@@ -35,7 +35,7 @@ function initializeCode() {
   divtext.appendChild(p);
   divtext.appendChild(divpic);
   div2.appendChild(div);
-  document.getElementById("doggo1").innerHTML = "Basset";
+  document.getElementById("doggo1").innerHTML = "Schipperke";
   document.querySelector("p").innerHTML = "Funny looking dawg";
 
   //Doge2
@@ -48,7 +48,7 @@ function initializeCode() {
   const img1 = document.createElement("img");
 
   img1.classList.add("wiki-img");
-  img1.src = "https://images.dog.ceo/breeds/hound-walker/n02089867_1824.jpg";
+  img1.src = "https://images.dog.ceo/breeds/entlebucher/n02108000_261.jpg";
   divpic1.classList.add("img-container");
   divtext1.classList.add("wiki-content");
   p1.classList.add("wiki-text");
@@ -63,7 +63,7 @@ function initializeCode() {
   divtext1.appendChild(p1);
   divtext1.appendChild(divpic1);
   div2.appendChild(div1);
-  document.getElementById("doggo2").innerHTML = "Walker";
+  document.getElementById("doggo2").innerHTML = "Entlebucher";
   document.getElementById("doggo2text").innerHTML =
     "Suspiciuos-looking dog animal";
 
@@ -77,7 +77,7 @@ function initializeCode() {
   const img2 = document.createElement("img");
 
   img2.classList.add("wiki-img");
-  img2.src = "https://images.dog.ceo/breeds/hound-english/n02089973_1490.jpg";
+  img2.src = "https://images.dog.ceo/breeds/komondor/n02105505_3380.jpg";
   divpic2.classList.add("img-container");
   divtext2.classList.add("wiki-content");
   p2.classList.add("wiki-text");
@@ -92,7 +92,7 @@ function initializeCode() {
   divtext2.appendChild(p2);
   divtext2.appendChild(divpic2);
   div2.appendChild(div22);
-  document.getElementById("doggo3").innerHTML = "English";
+  document.getElementById("doggo3").innerHTML = "Komondor";
   document.getElementById("doggo3text").innerHTML = "Summer loving boii";
 
   //Doge4
@@ -105,7 +105,7 @@ function initializeCode() {
   const img3 = document.createElement("img");
 
   img3.classList.add("wiki-img");
-  img3.src = "https://images.dog.ceo/breeds/hound-blood/n02088466_11903.jpg";
+  img3.src = "https://images.dog.ceo/breeds/sharpei/noel.jpg";
   divpic3.classList.add("img-container");
   divtext3.classList.add("wiki-content");
   p3.classList.add("wiki-text");
@@ -120,7 +120,7 @@ function initializeCode() {
   divtext3.appendChild(p3);
   divtext3.appendChild(divpic3);
   div2.appendChild(div32);
-  document.getElementById("doggo4").innerHTML = "Blood";
+  document.getElementById("doggo4").innerHTML = "Sharpei";
   document.getElementById("doggo4text").innerHTML = "Family dog";
 
   //Doge5
@@ -133,7 +133,7 @@ function initializeCode() {
   const img4 = document.createElement("img");
 
   img4.classList.add("wiki-img");
-  img4.src = "https://images.dog.ceo/breeds/hound-ibizan/n02091244_3319.jpg";
+  img4.src = "https://images.dog.ceo/breeds/germanshepherd/n02106662_15858.jpg";
   divpic4.classList.add("img-container");
   divtext4.classList.add("wiki-content");
   p4.classList.add("wiki-text");
@@ -148,6 +148,6 @@ function initializeCode() {
   divtext4.appendChild(p4);
   divtext4.appendChild(divpic4);
   div2.appendChild(div42);
-  document.getElementById("doggo5").innerHTML = "Ibizan";
+  document.getElementById("doggo5").innerHTML = "Germanshephard";
   document.getElementById("doggo5text").innerHTML = "Blood thirsty war dog";
 }
