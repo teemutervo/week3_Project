@@ -16,7 +16,7 @@ body {
   padding-left: 10px;
   display: flex;
 }
-@media only screen and (max-width: 600px) {
+@media (min-width: 600px) {
   .wiki-content {
     flex-direction: row-reverse;
   }
