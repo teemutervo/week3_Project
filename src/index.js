@@ -17,11 +17,21 @@ async function initializeCode() {
     let response = await fetch(url);
     let dogBreed = await response.json();
     let dogUrl = dogBreed.message;
-    console.log(dogUrl);
     return dogUrl;
   }
 
+  async function dogDescription1() {
+    let url =
+      "https://en.wikipedia.org/api/rest_v1/page/summary/Schipperke?redirect=false";
+    let response = await fetch(url);
+    let dogBreed = await response.json();
+    let dogText = dogBreed.extract;
+    console.log(dogBreed);
+    return dogText;
+  }
+
   let dogetype1 = await dogBreed1();
+  let dogSummary1 = await dogDescription1();
 
   const body = document.querySelector("body");
   const divMain = document.createElement("div"); //divMainin alle tulee kaikki muut elementit
@@ -55,8 +65,7 @@ async function initializeCode() {
   divpic.appendChild(img);
 
   document.getElementById("doggo1").innerHTML = "Schipperke"; //Nimetään otsikko ja laitetaan teksti kappaleeseen
-  document.getElementById("doggo1text").innerHTML =
-    "A Schipperke  is a small breed of dog that originated since the 1600's in Belgium. There has been a long informal debate over whether this type of dog is a spitz or miniature sheepdog. In their home country of Belgium they are considered a small shepherd. DNA research has shown that Schipperkes have a close relationship to the Spitz family of dog breeds.";
+  document.getElementById("doggo1text").innerHTML = dogSummary1;
 
   // Toinen koira alkaa tästä
 
@@ -65,11 +74,20 @@ async function initializeCode() {
     let response = await fetch(url);
     let dogBreed = await response.json();
     let dogUrl = dogBreed.message;
-    console.log(dogUrl);
     return dogUrl;
   }
 
+  async function dogDescription2() {
+    let url =
+      "https://en.wikipedia.org/api/rest_v1/page/summary/Entlebucher?redirect=false";
+    let response = await fetch(url);
+    let dogBreed = await response.json();
+    let dogText = dogBreed.extract;
+    return dogText;
+  }
+
   let dogetype2 = await dogBreed2();
+  let dogSummary2 = await dogDescription2();
 
   const div1 = document.createElement("div");
   const divtext1 = document.createElement("div");
@@ -95,8 +113,7 @@ async function initializeCode() {
   divtext1.appendChild(divpic1);
   divMain.appendChild(div1);
   document.getElementById("doggo2").innerHTML = "Entlebucher";
-  document.getElementById("doggo2text").innerHTML =
-    "The Entlebucher Sennenhund or Entlebucher Mountain Dog is a medium-sized herding dog, it is the smallest of the four regional breeds that constitute the Sennenhund dog type. The name Sennenhund refers to people called Senn, herders in the Swiss Alps. Entlebuch is a region in the canton of Lucerne in Switzerland. The breed is also known in English as the Entelbuch Mountain Dog, Entelbucher Cattle Dog, and similar combinations.";
+  document.getElementById("doggo2text").innerHTML = dogSummary2;
 
   // Kolmas koira
 
@@ -105,11 +122,20 @@ async function initializeCode() {
     let response = await fetch(url);
     let dogBreed = await response.json();
     let dogUrl = dogBreed.message;
-    console.log(dogUrl);
     return dogUrl;
   }
 
+  async function dogDescription3() {
+    let url =
+      "https://en.wikipedia.org/api/rest_v1/page/summary/komondor?redirect=false";
+    let response = await fetch(url);
+    let dogBreed = await response.json();
+    let dogText = dogBreed.extract;
+    return dogText;
+  }
+
   let dogetype3 = await dogBreed3();
+  let dogSummary3 = await dogDescription3();
 
   const div22 = document.createElement("div");
   const divtext2 = document.createElement("div");
@@ -135,9 +161,7 @@ async function initializeCode() {
   divtext2.appendChild(divpic2);
   divMain.appendChild(div22);
   document.getElementById("doggo3").innerHTML = "Komondor";
-  document.getElementById("doggo3text").innerHTML =
-    "The Komondor also known as the Hungarian sheepdog, is a large, white-coloured Hungarian breed of livestock guardian dog with a long, corded coat.";
-
+  document.getElementById("doggo3text").innerHTML = dogSummary3;
   //Neljäs koira
 
   async function dogBreed4() {
@@ -145,11 +169,20 @@ async function initializeCode() {
     let response = await fetch(url);
     let dogBreed = await response.json();
     let dogUrl = dogBreed.message;
-    console.log(dogUrl);
     return dogUrl;
   }
 
+  async function dogDescription4() {
+    let url =
+      "https://en.wikipedia.org/api/rest_v1/page/summary/boxer?redirect=false";
+    let response = await fetch(url);
+    let dogBreed = await response.json();
+    let dogText = dogBreed.extract;
+    return dogText;
+  }
+
   let dogetype4 = await dogBreed4();
+  let dogSummary4 = await dogDescription4();
 
   const div32 = document.createElement("div");
   const divtext3 = document.createElement("div");
@@ -175,8 +208,7 @@ async function initializeCode() {
   divtext3.appendChild(divpic3);
   divMain.appendChild(div32);
   document.getElementById("doggo4").innerHTML = "Boxer";
-  document.getElementById("doggo4text").innerHTML =
-    "The Shar Pei (Cantonese: shā pèih or Mandarin: 沙皮 shā pí) is a dog breed from southern China. Traditionally kept as a watchdog and property guardian, the Shar Pei was driven to the brink of extinction in the 20th century. The breed is known in the West for its deep wrinkles, whilst a traditional less wrinkled form is maintained in Hong Kong.";
+  document.getElementById("doggo4text").innerHTML = dogSummary4;
 
   // Viides koira
 
@@ -185,11 +217,20 @@ async function initializeCode() {
     let response = await fetch(url);
     let dogBreed = await response.json();
     let dogUrl = dogBreed.message;
-    console.log(dogUrl);
     return dogUrl;
   }
 
+  async function dogDescription5() {
+    let url =
+      "https://en.wikipedia.org/api/rest_v1/page/summary/German%20Shepherd?redirect=false";
+    let response = await fetch(url);
+    let dogBreed = await response.json();
+    let dogText = dogBreed.extract;
+    return dogText;
+  }
+
   let dogetype5 = await dogBreed5();
+  let dogSummary5 = await dogDescription5();
 
   const div42 = document.createElement("div");
   const divtext4 = document.createElement("div");
@@ -215,6 +256,5 @@ async function initializeCode() {
   divtext4.appendChild(divpic4);
   divMain.appendChild(div42);
   document.getElementById("doggo5").innerHTML = "Germanshephard";
-  document.getElementById("doggo5text").innerHTML =
-    "The German Shepherd Dog also known as the Alsatian, is a German breed of working dog of medium to large size. The breed was developed by Max von Stephanitz using various traditional German herding dogs from 1899.";
+  document.getElementById("doggo5text").innerHTML = dogSummary5;
 }
